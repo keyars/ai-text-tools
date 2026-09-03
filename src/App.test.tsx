@@ -1,0 +1,1 @@
+import{describe,it,expect}from'vitest';import{render,screen}from'@testing-library/react';import App from'./App';describe('TextLab',()=>{it('renders the AI workbench',()=>{render(<App/>);expect(screen.getByText('TEXT//LAB')).toBeInTheDocument();expect(screen.getByRole('button',{name:/Run summarize/i})).toBeInTheDocument()})});
